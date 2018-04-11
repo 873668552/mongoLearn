@@ -1,6 +1,7 @@
 1， 官网下载mongodb，建议下载低版本的。3.6版本以及后面版本，安装会等待很久。
-2， 安装时选择你实现准本好的那个磁盘，在这个磁盘夏创建文件夹。目录结构： （1）G:\mongodb （2）G:\mongodb\data\db
-(3)G:\mongodb\data\log
+2， 安装时选择你实现准本好的那个磁盘，在这个磁盘下创建文件夹。目录结构： （1）G:\mongodb （2）G:\mongodb\data\db
+(3)G:\mongodb\data\log （4）G:\mongodb\data\log\mongo.log (5)关联日志文件：G:\mongodb\bin\mongod --logpath G:\mongodb\data\log\mongo.log (6)关联数据库G:\mongodb\bin\mongod --dbpath G:\mongodb\data\db (7)设置为本地服务 :
+G:\mongodb\bin\mongod --logpath G:\mongodb\data\log\mongo.log --serviceName 'Mongodb' --serviceDisplayName 'Mongodb' --install
 3, 开一个cmd：运行G:\mongodb\bin\mongod.exe 。在浏览器访问 localhost:27017。
 出现It looks like you are trying to access MongoDB over HTTP on the native driver port.开启成功。
 
